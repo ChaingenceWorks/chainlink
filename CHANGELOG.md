@@ -1,5 +1,101 @@
 # Changelog Chainlink Core
 
+## 2.16.0 - PREVIEW
+
+## added
+
+- [#14100](https://github.com/smartcontractkit/chainlink/pull/14100) [`6a9528d`](https://github.com/smartcontractkit/chainlink/commit/6a9528db29dadd231ec592f10d655e5367301d8f) Thanks [@huangzhen1997](https://github.com/huangzhen1997)! - add error handling when arbitrum sequencer is not accessible #added
+
+- [#14099](https://github.com/smartcontractkit/chainlink/pull/14099) [`1d1af81`](https://github.com/smartcontractkit/chainlink/commit/1d1af81c51d78a7e1406d3e182b8740a2ae43c9c) Thanks [@huangzhen1997](https://github.com/huangzhen1997)! - add error handle for gnosis chiado for seen tx #added
+
+- [#14068](https://github.com/smartcontractkit/chainlink/pull/14068) [`6ab3eb5`](https://github.com/smartcontractkit/chainlink/commit/6ab3eb5b67739ff88d3c4cf8ea125fd8273bc2b1) Thanks [@asoliman92](https://github.com/asoliman92)! - #added merging core/capabilities/ccip from https://github.com/smartcontractkit/ccip
+
+- [#13647](https://github.com/smartcontractkit/chainlink/pull/13647) [`a41b353`](https://github.com/smartcontractkit/chainlink/commit/a41b353a20d73aa2d3fe3e8e979a0bcacc46fafe) Thanks [@bukata-sa](https://github.com/bukata-sa)! - #added Report new heads as a telemetry to OTI
+
+- [#13981](https://github.com/smartcontractkit/chainlink/pull/13981) [`6ef1d6e`](https://github.com/smartcontractkit/chainlink/commit/6ef1d6eb449ee1dc1d7d10d50990de7da55561ee) Thanks [@amaechiokolobi](https://github.com/amaechiokolobi)! - error handling for Treasure #added
+
+- [#14043](https://github.com/smartcontractkit/chainlink/pull/14043) [`55e7c8b`](https://github.com/smartcontractkit/chainlink/commit/55e7c8b5055c975665a59199d5eda9fa21801a07) Thanks [@asoliman92](https://github.com/asoliman92)! - Added CCIP plugins code from https://github.com/smartcontractkit/ccip/ #added
+
+- [#13987](https://github.com/smartcontractkit/chainlink/pull/13987) [`c1bd103`](https://github.com/smartcontractkit/chainlink/commit/c1bd103e9b134a90e0bd5f77b6e54797c7c881a8) Thanks [@KodeyThomas](https://github.com/KodeyThomas)! - #added L3X Config
+
+- [#13862](https://github.com/smartcontractkit/chainlink/pull/13862) [`05ef7fd`](https://github.com/smartcontractkit/chainlink/commit/05ef7fdbb115f55a85bcbbc5402350818501e1f5) Thanks [@martin-cll](https://github.com/martin-cll)! - New Mercury v4 report schema #added
+
+- [#13990](https://github.com/smartcontractkit/chainlink/pull/13990) [`98fc881`](https://github.com/smartcontractkit/chainlink/commit/98fc8813dd7f46e86a15fc3e838bbb681f835d0b) Thanks [@flodesi](https://github.com/flodesi)! - #added Add Astar TerminallyUnderpriced error mapping
+
+- [#14053](https://github.com/smartcontractkit/chainlink/pull/14053) [`4f0f780`](https://github.com/smartcontractkit/chainlink/commit/4f0f7802a884e831cd76d9578ee5c4a7134034db) Thanks [@DylanTinianov](https://github.com/DylanTinianov)! - Added custom client error messages for Mantle to capture InsufficientEth and Fatal errors. #added
+
+- [#13907](https://github.com/smartcontractkit/chainlink/pull/13907) [`1eaf5e08`](https://github.com/smartcontractkit/chainlink/commit/1eaf5e087a5ac204e0b472e1c307722887104678) Thanks [@dhaidashenko](https://github.com/dhaidashenko)! - Added new health check that ensures RPC provides new finalized heads at least every `NoNewFinalizedHeadsThreshold` #added
+
+## updated
+
+- [#14112](https://github.com/smartcontractkit/chainlink/pull/14112) [`1b58436`](https://github.com/smartcontractkit/chainlink/commit/1b584366d6bedc114946d0c8e202e95d031d5d37) Thanks [@giogam](https://github.com/giogam)! - #updated Sync feeds-manager wsrpc proto
+
+- [#13756](https://github.com/smartcontractkit/chainlink/pull/13756) [`c92a721`](https://github.com/smartcontractkit/chainlink/commit/c92a7212ee77b08c40d62925216e5081278a4e3f) Thanks [@vyzaldysanchez](https://github.com/vyzaldysanchez)! - #updated Adds DB syncing for registry syncer
+
+- [#14014](https://github.com/smartcontractkit/chainlink/pull/14014) [`c2c31c0`](https://github.com/smartcontractkit/chainlink/commit/c2c31c05ac3fe19d4df8313af25eb740953b935a) Thanks [@Madalosso](https://github.com/Madalosso)! - #updated Update Polygon configs to match PIP-35
+
+## bugfix
+
+- [#14057](https://github.com/smartcontractkit/chainlink/pull/14057) [`e0850a6`](https://github.com/smartcontractkit/chainlink/commit/e0850a6a31843606015d1c49d52b5a6ad8727378) Thanks [@reductionista](https://github.com/reductionista)! - #bugfix Addresses 2 minor issues with the pruning of LogPoller's db tables: logs not matching any filter will now be pruned, and rows deleted are now properly reported for observability
+
+- [#14125](https://github.com/smartcontractkit/chainlink/pull/14125) [`8fa8c3a`](https://github.com/smartcontractkit/chainlink/commit/8fa8c3a07512bb8358abdabc3fdcc8ae310c6c1c) Thanks [@bukata-sa](https://github.com/bukata-sa)! - #bugfix balance shutdown deadlock
+
+## internal
+
+- [#14138](https://github.com/smartcontractkit/chainlink/pull/14138) [`69335dc`](https://github.com/smartcontractkit/chainlink/commit/69335dc6b0837ba9726a2772bf1dc98174c03310) Thanks [@silaslenihan](https://github.com/silaslenihan)! - #internal Exposed Confirmed state to ChainWriter GetTransactionStatus method
+
+- [#14132](https://github.com/smartcontractkit/chainlink/pull/14132) [`2e314cd`](https://github.com/smartcontractkit/chainlink/commit/2e314cddf0f4dbd29cad4a43926dc1a5390cc70f) Thanks [@amit-momin](https://github.com/amit-momin)! - Updated ZK overflow detection to skip transactions with non-broadcasted attempts. Delayed detection for zkEVM using the MinAttempts config. Updated XLayer to use the same detection logic as zkEVM. #internal
+
+- [#13794](https://github.com/smartcontractkit/chainlink/pull/13794) [`c330def`](https://github.com/smartcontractkit/chainlink/commit/c330defde2211aa4a0d8392f867400a829220b2f) Thanks [@Farber98](https://github.com/Farber98)! - remove dependency on FinalityDepth in EVM TXM code. #internal
+
+- [#14096](https://github.com/smartcontractkit/chainlink/pull/14096) [`3f0fad6`](https://github.com/smartcontractkit/chainlink/commit/3f0fad643d554d2445273a67f58974cb6a785ec4) Thanks [@Farber98](https://github.com/Farber98)! - use FilteredLogs in EventBinding GetLatestValue instead of manual filtering. #internal
+
+- [#14095](https://github.com/smartcontractkit/chainlink/pull/14095) [`aa4e981`](https://github.com/smartcontractkit/chainlink/commit/aa4e981c8f51692ae19f57569260171736a3e4d9) Thanks [@cedric-cordenier](https://github.com/cedric-cordenier)! - #internal Change CapabilityType to string; remove possiblity of a panic
+
+- [#13957](https://github.com/smartcontractkit/chainlink/pull/13957) [`20dbba8`](https://github.com/smartcontractkit/chainlink/commit/20dbba8e76604a2488b0717d53d706ee11b11a9c) Thanks [@amit-momin](https://github.com/amit-momin)! - Added nonce validation immediately after broadcast for Hedera #internal
+
+- [#13638](https://github.com/smartcontractkit/chainlink/pull/13638) [`2312827`](https://github.com/smartcontractkit/chainlink/commit/2312827156f24fa4a6e420aec12e5a3aeac81e2b) Thanks [@amit-momin](https://github.com/amit-momin)! - Introduced finalized transaction state. Added a finalizer component to the TXM to mark transactions as finalized. #internal
+
+- [#14016](https://github.com/smartcontractkit/chainlink/pull/14016) [`8b9f2b6`](https://github.com/smartcontractkit/chainlink/commit/8b9f2b6b9098e8ec2368773368239106d066e4e3) Thanks [@ilija42](https://github.com/ilija42)! - #internal Add evm Chain Reader GetLatestValue support for filtering on indexed topic types that get hashed.
+
+- [#14033](https://github.com/smartcontractkit/chainlink/pull/14033) [`375e17b`](https://github.com/smartcontractkit/chainlink/commit/375e17b70fe6f17483556a491370e72218896dbc) Thanks [@Farber98](https://github.com/Farber98)! - Change ChainReader Block primitive field from int to string. #internal
+
+- [#13999](https://github.com/smartcontractkit/chainlink/pull/13999) [`2a032e8`](https://github.com/smartcontractkit/chainlink/commit/2a032e83a5e09ae128e8c751779a7d1eebb729ea) Thanks [@amit-momin](https://github.com/amit-momin)! - Updated AutoPurge.Threshold and AutoPurge.MinAttempts configs to only be required for heuristic and added content-type header for Scroll API #internal
+
+- [#14021](https://github.com/smartcontractkit/chainlink/pull/14021) [`bd648bd`](https://github.com/smartcontractkit/chainlink/commit/bd648bd73df2a1de91a463a988f4c5b61e74b240) Thanks [@dhaidashenko](https://github.com/dhaidashenko)! - Added custom finality calculation for Astar #internal
+
+- [#14127](https://github.com/smartcontractkit/chainlink/pull/14127) [`5e99bdb`](https://github.com/smartcontractkit/chainlink/commit/5e99bdb764171f584df1fc6e10495c8ec0a3bb63) Thanks [@amit-momin](https://github.com/amit-momin)! - Added client error classification for terminally stuck transactions in the TXM #internal
+
+- [#14018](https://github.com/smartcontractkit/chainlink/pull/14018) [`82accff`](https://github.com/smartcontractkit/chainlink/commit/82accfff5c445fd1d29a26607234eba73e6b30fd) Thanks [@ettec](https://github.com/ettec)! - #internal fix to keystone e2e test dispatcher to correctly mock duplicate registration error
+
+- [#13876](https://github.com/smartcontractkit/chainlink/pull/13876) [`15dc74c`](https://github.com/smartcontractkit/chainlink/commit/15dc74cabd3a83041ca97df54ea0fbb7e76e2a0a) Thanks [@dhaidashenko](https://github.com/dhaidashenko)! - Custom (30s) timeout for Hedera RPC requests with large payloads (SendTransaction, CallContext, etc.) #internal
+
+- [#14092](https://github.com/smartcontractkit/chainlink/pull/14092) [`3399dd6`](https://github.com/smartcontractkit/chainlink/commit/3399dd6d7fee12bd8d099b74397edcc4dc56c11d) Thanks [@cds95](https://github.com/cds95)! - #internal prevent editing whether or not a DON accepts workflows
+
+- [#14030](https://github.com/smartcontractkit/chainlink/pull/14030) [`d90bb66`](https://github.com/smartcontractkit/chainlink/commit/d90bb66934a46bb1c6d376b000d860e1588d91c7) Thanks [@ettec](https://github.com/ettec)! - #internal restore common version to head of develop
+
+- [#14105](https://github.com/smartcontractkit/chainlink/pull/14105) [`eb31cf7`](https://github.com/smartcontractkit/chainlink/commit/eb31cf7970bef1615b10b5a734c16879b448f30a) Thanks [@ettec](https://github.com/ettec)! - #internal speed up keystone e2e tests
+
+- [#14047](https://github.com/smartcontractkit/chainlink/pull/14047) [`d963b0a`](https://github.com/smartcontractkit/chainlink/commit/d963b0aaac2117902742cf1d6fc8471e82ae711b) Thanks [@ettec](https://github.com/ettec)! - #internal fix the mock trigger to ensure events are sent
+
+- [#13935](https://github.com/smartcontractkit/chainlink/pull/13935) [`7ec99ef`](https://github.com/smartcontractkit/chainlink/commit/7ec99efc64832750825f8bc6711fb9794d6e40df) Thanks [@ettec](https://github.com/ettec)! - #internal ensure remote target request hash is deterministic
+
+- [#14017](https://github.com/smartcontractkit/chainlink/pull/14017) [`1257d33`](https://github.com/smartcontractkit/chainlink/commit/1257d33913d243c146bccbf4bda67a2bb1c7d5af) Thanks [@DeividasK](https://github.com/DeividasK)! - #internal
+
+- [#14059](https://github.com/smartcontractkit/chainlink/pull/14059) [`40f4bec`](https://github.com/smartcontractkit/chainlink/commit/40f4becb1eab96920d8bfd59019cdb9358a94122) Thanks [@DeividasK](https://github.com/DeividasK)! - #internal
+
+- [#13993](https://github.com/smartcontractkit/chainlink/pull/13993) [`f5e0bd6`](https://github.com/smartcontractkit/chainlink/commit/f5e0bd614a6c42d195c4ad74a10f7070970d01d5) Thanks [@DeividasK](https://github.com/DeividasK)! - #internal
+
+- [#14066](https://github.com/smartcontractkit/chainlink/pull/14066) [`98b9054`](https://github.com/smartcontractkit/chainlink/commit/98b90543972d37e4c00196f3f00bcf5f380ea04d) Thanks [@DeividasK](https://github.com/DeividasK)! - #internal
+
+- [#14050](https://github.com/smartcontractkit/chainlink/pull/14050) [`537d2ec`](https://github.com/smartcontractkit/chainlink/commit/537d2ec1ad846898f820874442c3f69915096bad) Thanks [@ettec](https://github.com/ettec)! - #internal fix data race in syncer launcher
+
+- [#13970](https://github.com/smartcontractkit/chainlink/pull/13970) [`cefbb09`](https://github.com/smartcontractkit/chainlink/commit/cefbb09797249309ac18e4ef81147e30f7c24360) Thanks [@cds95](https://github.com/cds95)! - #internal prevent reentrancy when configuring DON in Capabilities Registry
+
+## untagged
+
+- [#13948](https://github.com/smartcontractkit/chainlink/pull/13948) [`3b4c2b5`](https://github.com/smartcontractkit/chainlink/commit/3b4c2b58c3ebb04a2261108e758a3419de436a71) Thanks [@chainchad](https://github.com/chainchad)! - Initialize start of v2.16.0 release
+
 ## 2.15.0
 
 ### Minor Changes
@@ -178,7 +274,7 @@
 
 - [#13495](https://github.com/smartcontractkit/chainlink/pull/13495) [`483ee6ae06`](https://github.com/smartcontractkit/chainlink/commit/483ee6ae06f608d150ab360e0a3ffe6895b39d52) Thanks [@pavel-raykov](https://github.com/pavel-raykov)! - #updated Fix verb formatting in the log outputs.
 
-- [#13599](https://github.com/smartcontractkit/chainlink/pull/13599) [`e0ce0795b4`](https://github.com/smartcontractkit/chainlink/commit/e0ce0795b44f27539611327efce7c7c004511daa) Thanks [@pavel-raykov](https://github.com/pavel-raykov)! - #internal Add loggercheck linter to verify that \*w logging methods have even number of args.
+- [#13599](https://github.com/smartcontractkit/chainlink/pull/13599) [`e0ce0795b4`](https://github.com/smartcontractkit/chainlink/commit/e0ce0795b44f27539611327efce7c7c004511daa) Thanks [@pavel-raykov](https://github.com/pavel-raykov)! - #internal Add loggercheck linter to verify that *w logging methods have even number of args.
 
 ## 2.13.0 - 2024-07-01
 
@@ -515,7 +611,7 @@
 
 - [#12412](https://github.com/smartcontractkit/chainlink/pull/12412) [`83c8688a14`](https://github.com/smartcontractkit/chainlink/commit/83c8688a14ac04111f999d132673ebaf6a364b4a) Thanks [@poopoothegorilla](https://github.com/poopoothegorilla)! - Bump grafana to 1.1.1
 
-- [#12248](https://github.com/smartcontractkit/chainlink/pull/12248) [`e1950769ee`](https://github.com/smartcontractkit/chainlink/commit/e1950769ee3ff2a40ca5772b9634c45f8be241cc) Thanks [@FelixFan1992](https://github.com/FelixFan1992)! - Add version support for automation registry 2.\*
+- [#12248](https://github.com/smartcontractkit/chainlink/pull/12248) [`e1950769ee`](https://github.com/smartcontractkit/chainlink/commit/e1950769ee3ff2a40ca5772b9634c45f8be241cc) Thanks [@FelixFan1992](https://github.com/FelixFan1992)! - Add version support for automation registry 2.*
 
 ## 2.10.0 - 2024-04-05
 
@@ -1091,8 +1187,8 @@ The following `AUDIT_LOGGER_*` environment variables below configure this option
 
 An optional list of HTTP headers to be added for every optional audit log event. If the above `AUDIT_LOGGER_FORWARD_TO_URL` is set, audit log events will be POSTed to that URL, and will include headers specified in this environment variable. One example use case is auth for example: `AUDIT_LOGGER_HEADERS="Authorization||{{token}}"`.
 
-Header keys and values are delimited on ||, and multiple headers can be added with a forward slash delimiter ('\\'). An example of multiple key value pairs:
-`AUDIT_LOGGER_HEADERS="Authorization||{{token}}\Some-Other-Header||{{token2}}"`
+Header keys and values are delimited on ||, and multiple headers can be added with a forward slash delimiter ('\'). An example of multiple key value pairs:
+`AUDIT_LOGGER_HEADERS="Authorization||{{token}}Some-Other-Header||{{token2}}"`
 
 ##### AUDIT_LOGGER_JSON_WRAPPER_KEY
 
@@ -1304,7 +1400,7 @@ If minConfirmations > 0 and failOnRevert=true then the ethtx task will error on 
 
 If `minConfirmations` is not set on the task, the chain default will be used which is usually 12 and always greater than 0.
 
-- `http` task now allows specification of request headers. Use like so: `foo [type=http headers="[\\"X-Header-1\\", \\"value1\\", \\"X-Header-2\\", \\"value2\\"]"]`.
+- `http` task now allows specification of request headers. Use like so: `foo [type=http headers="[\"X-Header-1\", \"value1\", \"X-Header-2\", \"value2\"]"]`.
 
 ### Fixed
 
@@ -1320,7 +1416,7 @@ If `minConfirmations` is not set on the task, the chain default will be used whi
 
 ### Fixed
 
-- Ensure failed EthSubscribe didn't register a (\*rpc.ClientSubscription)(nil) which would lead to a panic on Unsubscribe
+- Ensure failed EthSubscribe didn't register a (*rpc.ClientSubscription)(nil) which would lead to a panic on Unsubscribe
 - Fixes parsing of float values on job specs
 
 ## [1.4.0] - 2022-05-02
@@ -1345,7 +1441,7 @@ If `minConfirmations` is not set on the task, the chain default will be used whi
 ### Added
 
 - Added support for Keeper registry v1.2 in keeper jobs
-- Added disk rotating logs. Chainlink will now always log to disk at debug level. The default output directory for debug logs is Chainlink's root directory (ROOT_DIR) but can be configured by setting LOG_FILE_DIR. This makes it easier for node operators to report useful debugging information to Chainlink's team, since all the debug logs are conveniently located in one directory. Regular logging to STDOUT still works as before and respects the LOG_LEVEL env var. If you want to log in disk at a particular level, you can pipe STDOUT to disk. This automatic debug-logs-to-disk feature is enabled by default, and will remain enabled as long as the `LOG_FILE_MAX_SIZE` ENV var is set to a value greater than zero. The amount of disk space required for this feature to work can be calculated with the following formula: `LOG_FILE_MAX_SIZE` \* (`LOG_FILE_MAX_BACKUPS` + 1). If your disk doesn't have enough disk space, the logging will pause and the application will log Errors until space is available again. New environment variables related to this feature:
+- Added disk rotating logs. Chainlink will now always log to disk at debug level. The default output directory for debug logs is Chainlink's root directory (ROOT_DIR) but can be configured by setting LOG_FILE_DIR. This makes it easier for node operators to report useful debugging information to Chainlink's team, since all the debug logs are conveniently located in one directory. Regular logging to STDOUT still works as before and respects the LOG_LEVEL env var. If you want to log in disk at a particular level, you can pipe STDOUT to disk. This automatic debug-logs-to-disk feature is enabled by default, and will remain enabled as long as the `LOG_FILE_MAX_SIZE` ENV var is set to a value greater than zero. The amount of disk space required for this feature to work can be calculated with the following formula: `LOG_FILE_MAX_SIZE` * (`LOG_FILE_MAX_BACKUPS` + 1). If your disk doesn't have enough disk space, the logging will pause and the application will log Errors until space is available again. New environment variables related to this feature:
   - `LOG_FILE_MAX_SIZE` (default: 5120mb) - this env var allows you to override the log file's max size (in megabytes) before file rotation.
   - `LOG_FILE_MAX_AGE` (default: 0) - if `LOG_FILE_MAX_SIZE` is set, this env var allows you to override the log file's max age (in days) before file rotation. Keeping this config with the default value means not to remove old log files.
   - `LOG_FILE_MAX_BACKUPS` (default: 1) - if `LOG_FILE_MAX_SIZE` is set, this env var allows you to override the max amount of old log files to retain. Keeping this config with the default value means to retain 1 old log file at most (though `LOG_FILE_MAX_AGE` may still cause them to get deleted). If this is set to 0, the node will retain all old log files instead.
@@ -2288,7 +2384,7 @@ Note that it has no effect on FMv1 jobs. Node operators will need to upgrade to 
 - Task definitions in v2 jobs (those with TOML specs) now support quoting strings with angle brackets (which DOT already permitted). This is particularly useful when defining JSON blobs to post to external adapters. For example:
 
   ```
-  my_bridge [type=bridge name="my_bridge" requestData="{\\"hi\\": \\"hello\\"}"]
+  my_bridge [type=bridge name="my_bridge" requestData="{\"hi\": \"hello\"}"]
   ```
 
   ... can now be written as:
